@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+  
+    "name": "speak(BaiduApi)",
+    "description": "This extension allows the user to text-to-speak the selected text.",
+    "version": "1.0",
+  
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html",
+      "default_title": "Click here!"
+    },
+    "permissions": [
+      "activeTab",
+      "storage",
+      "contextMenus"
+    ],
+    "icons": {
+        "16": "icon.png"
+    },
+    "background": {
+        "scripts": ["eventPage.js"],
+        "persistent": false
+    }
+  }

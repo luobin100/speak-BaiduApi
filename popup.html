@@ -1,0 +1,36 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <meta charset="utf-8"> 
+    <title>speak(BaiduApi)</title>
+    <style type="text/css">
+      body {
+        margin: 10px;
+        white-space: nowrap;
+      }
+
+      h1 {
+        font-size: 15px;
+      }
+
+    </style>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+    -->
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <h1>speak(BaiduApi)</h1>
+    <p>使用方法:</p>
+    <p>选中想要朗读的文字，右键选择 “speak(BaiduApi)”。</p>
+  </body>
+</html>
